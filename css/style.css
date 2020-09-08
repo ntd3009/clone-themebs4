@@ -208,9 +208,10 @@ header.header {
   justify-content: space-between;
 }
 
-.header-inner .navbar-items .navbar-item.mega-menu a svg {
+.header-inner .navbar-items .navbar-item.mega-menu a i {
   margin-left: 8px;
   margin-right: 10px;
+  font-size: 1.5rem;
   color: inherit;
   fill: currentColor;
 }
@@ -453,13 +454,13 @@ section.hero {
     position: relative;
   }
   
-  .header-inner .navbar-items .mega-menu .dropdown-menu .dropdown-item svg {
+  .header-inner .navbar-items .mega-menu .dropdown-menu .dropdown-item i {
     margin: 0;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
   }
   
   .header-inner .navbar-items .mega-menu.pos-mid .dropdown-menu .sub-menu {
@@ -498,13 +499,12 @@ section.hero {
     max-height: 0;
     overflow: hidden;
     overflow-y: auto;
-}
+  }
 
   .header-inner .navbar.open {
     max-height: 75vh;
     padding: 14px 24px;
     padding-right: 30px;
-
   }
 
   .header-inner .navbar-items .navbar-item.navbar-item-last {
@@ -518,6 +518,29 @@ section.hero {
 
   .header-inner .navbar-items .mega-drop .dropdown-menu .dropdown-item {
     padding: 8px 24px;
+  }
+
+  .header-inner .navbar-items .navbar-item.mega-menu a i {
+    margin: 0;
+    transform-origin: 50% 50%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transition: transform .3s;
+    -webkit-transition: transform .3s;
+    -moz-transition: transform .3s;
+    -ms-transition: transform .3s;
+    -o-transition: transform .3s;
+}
+
+  .header-inner .navbar-items .mega-drop.active > a i {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
   }
 
   .header-inner .navbar-items .nav-menu {
