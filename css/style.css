@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
   line-height: 1.15;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -143,6 +144,10 @@ input {
   text-align: center;
 }
 
+.ta-cen {
+  text-align: center;
+}
+
 .pl-0 {
   padding-left: 0;
 }
@@ -259,6 +264,25 @@ input {
 
 .image-decor>div>img {
   width: 100%;
+}
+
+.badge {
+  display: inline-flex;
+  padding: .44rem .525rem;
+  font-size: 1.05rem;
+  line-height: 1;
+  white-space: nowrap;
+  font-weight: 60;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.badge-primary {
+  color: #fff;
+  background-color: var(--primary-color);
 }
 
 .text-white {
@@ -798,6 +822,219 @@ section.banner-features {
   margin-left: 3px;
 }
 
+.pricing .pricing-item {
+  padding: 2.4rem;
+  background-color: #fff;
+  box-shadow: 0px 1.2rem 1.5rem rgba(140, 152, 164, 0.1);
+}
+
+.pricing .pricing-item:not(:last-child) {
+  margin-bottom: .4rem;
+}
+
+.pricing .pricing-item-head {
+  display: flex;
+}
+
+.pricing .pricing-item-head .pricing-icon {
+  min-width: 5.6rem;
+  margin-right: 0.8rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing .pricing-head-text .pricing-title {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.pricing .pricing-head-text .pricing-sub-title {
+  font-size: 1.28rem;
+  margin-bottom: 0;
+}
+
+.pricing .pricing-item .pricing-content {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .pricing .pricing-item .pricing-content {
+    margin-bottom: 0;
+  }
+}
+
+.pricing .pricing-item .pricing-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1.2rem 1.6rem;
+  border: 1px solid #e7eaf3;
+  color: var(--primary-color);
+}
+
+.pricing .pricing-item .pricing-btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+}
+
+section.cta {
+  background-color: var(--primary-color);
+  padding: 6.4rem 0;
+}
+
+.cta .btn {
+  padding: 1.2rem 1.6rem;
+  margin: 4px;
+  border-radius: 9.9rem;
+  -webkit-border-radius: 9.9rem;
+  -moz-border-radius: 9.9rem;
+  -ms-border-radius: 9.9rem;
+  -o-border-radius: 9.9rem;
+  min-width: 16rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.cta .btn:first-child {
+  background-color: #2d1582;
+  border-color: #2d1582;
+  color: #fff;
+}
+
+.cta .btn:hover {
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+}
+
+.footer .footer-top {
+  padding-bottom: 3.2rem;
+  border-bottom: 1px solid #e7eaf3;
+}
+
+.footer .footer-item {
+  margin-bottom: 3.2rem;
+}
+
+.footer .footer-logo {
+  display: inline-flex;
+  align-items: flex-start;
+  margin-bottom: 2.4rem;
+}
+
+.footer .footer-logo > img {
+  width: 100%;
+  max-width: 12rem;
+}
+
+.footer .footer-nav-item .footer-nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding: .8rem 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--normal-color);
+}
+
+.footer .footer-nav-item .footer-nav-link:hover {
+  color: var(--primary-color);
+}
+
+.footer .footer-nav-item .footer-nav-link > i {
+  margin-right: 0.8rem;
+}
+
+.footer .footer-nav-item .footer-nav-link > .badge {
+  align-self: center;
+  margin: 0 .4rem;
+}
+
+.footer .footer-bot {
+  padding: 3.2rem 0;
+}
+
+.footer .footer-nav-item-separator {
+  margin: 0 1.6rem;
+}
+
+.footer .footer-social-item {
+  width: 2.8rem;
+  height: 2.8rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #71869d1a;
+  border: 1px solid #0000;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-left: 8px;
+  color: #71869d;
+}
+
+.footer .footer-social-item:hover {
+  background-color: #71869d;
+  color: #fff;
+  box-shadow: 0 4px 11px rgba(113, 134, 157, 0.1);
+}
+
+.footer .footer-copyright {
+  margin-top: 4.8rem;
+}
+
+.footer .footer-copyright > p {
+  font-size: 1.28rem;
+}
+
+#js-go-top {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.3rem;
+  height: 4.3rem;
+  background-color: #71869d1a;
+  color: var(--normal-color);
+  opacity: .5;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: fixed;
+  z-index: 999;
+  right: 32px;
+  bottom: 32px;
+  transition: background .25s, color .25s, opacity .25s;
+  -webkit-transition: background .25s, color .25s, opacity .25s;
+  -moz-transition: background .25s, color .25s, opacity .25s;
+  -ms-transition: background .25s, color .25s, opacity .25s;
+  -o-transition: background .25s, color .25s, opacity .25s;
+  display: none;
+}
+
+#js-go-top:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  opacity: 1;
+}
+
+
 @media screen and (min-width: 992px) {
   header.header {
     position: absolute;
@@ -806,6 +1043,20 @@ section.banner-features {
     right: 0;
     background-color: #0000;
     z-index: 99;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+  header.header.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0 1px 10px rgba(140, 152, 164, 0.125);
   }
 
   .header-inner .btn-navbar {
@@ -932,6 +1183,14 @@ section.banner-features {
   .ff-text-wrap {
     padding-bottom: 5.6rem;
   }
+
+  .cta .cta-btns {
+    justify-content: flex-end;
+  }
+
+  .cta .heading {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1049,6 +1308,10 @@ section.banner-features {
   .hero .text h2 {
     font-size: 5rem;
   }
+
+  .cta .heading {
+    margin-bottom: 3.2rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1064,6 +1327,26 @@ section.banner-features {
     margin-bottom: 4.8rem;
   }
 
+  .pricing .pricing-item .pricing-btn {
+    margin-top: 1.6rem;
+  }
+
+  .footer-social-items {
+    justify-content: flex-start;
+  }
+
+  .footer .footer-social-item {
+    margin-left: 0;
+    margin-right: 8px;
+  }
+
+  .footer .footer-nav-cr {
+    margin-bottom: 2.4rem;
+  }
+
+  .footer .footer-copyright {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 575px) {
